@@ -1,38 +1,138 @@
-.App {
+* {
+  padding: 5px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fefefe;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 50px auto;
+}
+.heading {
   text-align: center;
+  font-size: 30px;
+  margin-bottom: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.card {
+  width: 70%;
+  border: 1px solid #ccc;
+  margin-bottom: 50px;
+  transition: 0.3s;
+  box-shadow: 2px 18px 20px 20px #666666;
+  
+}
+
+.card-header {
+  text-align: center;
+  padding: 50px 10px;
+  background: black;
+  color: #fff;
+  font-size: 20px;
+}
+
+.card-body {
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 18px;
+  background: darkolivegreen;
+  color: white;
+  
+}
+.card-body2{
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 18px;
+  background:darkslategray;
+  color: white;
+} 
+
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 1000px) {
+  .card,.input-box ,.search-bar {
+    width: 40%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media screen and (max-width: 620px) {
+  .container,.input-box, .search-bar {
+    width: 100%;
+  }
+
+  .heading {
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .card {
+    width: 110%;
+  }
+}
+
+.versus{
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 18px;
+  color:black;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.caption{
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 18px;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  color:black;
+}
+
+.search-bar{
+      
+  border-radius: 10px;
+  height: 42px;
+  padding: 10px;
+
+}
+.btn-danger {
+border: 2px solid black;
+height: 39px;
+}
+.input-box{
+  border-radius: 7%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  border: 1px solid;
+  background: black;
+  padding: 10px;
+  box-shadow: 2px 18px 20px 20px #666666;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
 }
