@@ -91,9 +91,8 @@ body {
   font-style: italic;
   font-weight: bold;
   font-size: 18px;
-  color:black;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
+  color: pink;
+ 
 }
 
 .caption{
@@ -103,7 +102,7 @@ body {
   font-size: 18px;
   animation-duration: 4s;
   animation-iteration-count: infinite;
-  color:black;
+  color:fuchsia;
 }
 
 .search-bar{
