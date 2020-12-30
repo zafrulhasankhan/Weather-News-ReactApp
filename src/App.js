@@ -9,6 +9,7 @@ import {
   Grid,
   Typography
 } from "@material-ui/core";
+
 const api= {
   key: "d52b0a40c9c558c56bc3c33921f958c9",
   base:"https://api.openweathermap.org/data/2.5/"
@@ -67,20 +68,19 @@ function App() {
     var seconds1 = date1.getSeconds();
   return (
     <div className="App">
+      
       <main>
+
       <CardActions>
         <Grid container justify="center">
           <div className="input-box">
-           
-          <form className="search-form" onSubmit={getSearch}>
-          <p style={{color:'white',fontSize:'17px'}}><b><u>Nasim's Weather App</u></b></p>
-         
-            <input className="search-bar"  placeholder="Enter City for weather news" type="text" value={search} onChange={updateSearch}></input><br></br><br></br>
-       
-          <button className="btn btn-primary" type="submit" >Search</button>
-          </form>
-        </div>
-        </Grid>
+             <form className="search-form" onSubmit={getSearch}>
+               <p style={{color:'white',fontSize:'17px'}}><b><u>Nasim's Weather App</u></b></p>
+                 <input className="search-bar"  placeholder="Enter City for weather news" type="text" value={search} onChange={updateSearch}></input><br></br><br></br>
+                    <button className="btn btn-primary" type="submit" >Search</button>
+               </form>
+            </div>
+         </Grid>
       </CardActions>
    
       
@@ -118,11 +118,22 @@ function App() {
       </div>
     
            </div>
-    ):null}
+    ):(
+      <CardActions>
+        <Grid container justify="center">
+        <div className="playercard">
+           <h5>Not Found...</h5>
+        </div>
+        </Grid>
+        </CardActions>
+    )}
       </main>
 
+      <br></br>
       <p className="creater"  style={{textAlign:"center"}}> <b>Created by</b><a href="https://web.facebook.com/zafrulhasan.nasim" target="_blank"><b>Zafrul Hasan Nasim</b> </a></p>
-    </div>
+    
+      
+      </div>
   );
 }
 

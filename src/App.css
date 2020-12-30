@@ -66,13 +66,13 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
-  .card,.input-box ,.search-bar {
+  .input-box ,.search-bar {
     width: 40%;
   }
 }
 
 @media screen and (max-width: 620px) {
-  .container,.input-box, .search-bar {
+  .input-box, .search-bar {
     width: 100%;
   }
 
@@ -106,11 +106,11 @@ body {
 }
 
 .search-bar{
-      
+    font-size: medium;  
   border-radius: 10px;
   height: 42px;
   padding: 10px;
-
+  
 }
 .btn-danger {
 border: 2px solid black;
@@ -134,4 +134,19 @@ height: 39px;
 .input-box:hover {
   transform: scale(1.05);
   box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+
+
+.playercard{
+  text-align: center;
+  justify-content:center;
+  border: 1px solid black;
+  width: 255px;
+  background: black;
+  color: white;
+  box-shadow: 2px 18px 20px 20px #666666;
+}
+.playercard:hover {
+transform: scale(1.05);
+box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
 }
