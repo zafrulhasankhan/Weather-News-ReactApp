@@ -1,4 +1,7 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+
+# Nasim's Weather App
+ [Live Site for this Project](https://weather-news-app-by-nasim.netlify.app).
 
 ## Available Scripts
 
